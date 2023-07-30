@@ -121,3 +121,9 @@
 .tcomentarios {
   margin-bottom: 20px;
 }
+
+@media (max-width: 40rem) {
+  .tcomentarios {
+    font-size: 1.2rem;
+  }
+  }

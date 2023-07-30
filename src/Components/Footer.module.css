@@ -9,3 +9,10 @@
 .footer p {
   margin-top: 1rem;
 }
+
+@media (max-width: 40rem) {
+  .footer {
+    padding: 2rem;
+  height: 8rem;
+  }
+}
