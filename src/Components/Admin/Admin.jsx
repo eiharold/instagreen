@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import styles from './Admin.module.css';
-import stylesBtn from '../Forms/Button.module.css';
 import { UserContext } from '../../UserContext';
 import { ReactComponent as Sair } from '../../Assets/sair.svg';
 import UserDelete from './UserDelete';

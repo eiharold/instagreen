@@ -36,7 +36,7 @@
 }
 
 .button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: var(--type-first);
   cursor: pointer;
   border: none;
@@ -47,6 +47,8 @@
   padding: 0.8rem 1.2rem;
   box-sizing: border-box;
   transition: 0.1s;
+  display: flex;
+  justify-content: center;
 }
 
 .button:hover,

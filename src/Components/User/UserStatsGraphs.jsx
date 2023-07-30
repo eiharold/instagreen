@@ -23,7 +23,8 @@ const UserStatsGraphs = ({ data }) => {
   return (
     <section className={`${styles.graph} animeLeft`}>
       <div className={`${styles.total} ${styles.graphItem}`}>
-        <p>Acessos: {total}</p>
+        <p>Número de publicações: {data.length}</p>
+        <p>Acessos Totais: {total}</p>
       </div>
       <div className={styles.graphItem}>
         <VictoryPie
@@ -38,14 +39,29 @@ const UserStatsGraphs = ({ data }) => {
             },
             labels: {
               fontSize: 14,
-              fill: '#333',
+              fill: '#708f82',
             },
           }}
         />
       </div>
       <div className={styles.graphItem}>
         <VictoryChart>
-          <VictoryBar alignment="start" data={graph}></VictoryBar>
+          <VictoryBar
+            alignment="start"
+            data={graph}
+            style={{
+              data: {
+                fillOpacity: 0.9,
+                stroke: '#fff',
+                strokeWidth: 2,
+                fill: '#636363',
+              },
+              labels: {
+                fontSize: 14,
+                fill: '#708f82',
+              },
+            }}
+          ></VictoryBar>
         </VictoryChart>
       </div>
     </section>

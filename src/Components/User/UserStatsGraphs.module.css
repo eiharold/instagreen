@@ -19,7 +19,10 @@
 .total {
   grid-column: 1 /3;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6rem;
 }
 
 @media (max-width: 40rem) {
@@ -28,5 +31,7 @@
   }
   .total {
     grid-column: 1;
+    flex-direction: column;
+    align-items: start;
   }
 }

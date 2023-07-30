@@ -5,12 +5,16 @@
 
 .photo img {
   border-radius: 8px;
+  min-width: 240px;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 50rem) {
   .photo:nth-child(2) {
     grid-column: initial;
     grid-row: initial;
+  }
+  .photo img {
+    min-width: auto;
   }
 }
 

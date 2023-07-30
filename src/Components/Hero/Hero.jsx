@@ -10,7 +10,7 @@ const Hero = () => {
         Compartilhe seu amor por plantas e descubra novas espécies com a nossa
         comunidade.
       </h1>
-      <Link className={stylesBtn.button} to="/login">
+      <Link className={stylesBtn.button} to="/login/criar">
         Entre para a comunidade
       </Link>
     </div>

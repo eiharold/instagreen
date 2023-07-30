@@ -2,6 +2,7 @@ import React from 'react';
 import { UserContext } from '../../UserContext';
 import PhotoCommentsForm from './PhotoCommentsForm';
 import styles from './PhotoComments.module.css';
+import { Link } from 'react-router-dom';
 
 const PhotoComments = (props) => {
   const [comments, setComments] = React.useState(() => props.comments);
@@ -14,6 +15,12 @@ const PhotoComments = (props) => {
 
   return (
     <>
+      {comments.length == 0 && <p>Seja o primeiro a comentar!</p>}
+      {comments.length == 0 && !login && (
+        <Link style={{ color: '#718f82' }} to="/login">
+          Faça login.
+        </Link>
+      )}
       <ul
         ref={commentsSection}
         className={`${styles.comments} ${props.single ? styles.single : ''}`}
