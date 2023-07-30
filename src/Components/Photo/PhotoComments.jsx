@@ -22,6 +22,7 @@ const PhotoComments = (props) => {
         </Link>
       )}
       <ul
+        style={{ marginBottom: '20px' }}
         ref={commentsSection}
         className={`${styles.comments} ${props.single ? styles.single : ''}`}
       >

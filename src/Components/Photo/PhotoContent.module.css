@@ -1,7 +1,7 @@
 .photo {
   margin: auto;
   height: 36rem;
-  border-radius: 8px;
+  border-radius: 12px;
   background: white;
   display: grid;
   grid-template-columns: 36rem 20rem;
