@@ -36,9 +36,9 @@ const PhotoContent = ({ data, single }) => {
           <p className={styles.descricao}>{photo.descricao}</p>
           <p className={styles.hashtags}>{photo.hashtags}</p>
           <h2 className={styles.tcomentarios}>COMENTÁRIOS:</h2>
+          <PhotoComments single={single} id={photo.id} comments={comments} />
         </div>
       </div>
-      <PhotoComments single={single} id={photo.id} comments={comments} />
     </div>
   );
 };

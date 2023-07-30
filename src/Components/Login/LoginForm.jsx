@@ -37,7 +37,9 @@ const LoginForm = () => {
         )}
         <Error error={error && 'Dados incorretos.'} />
       </form>
-
+      <Link className={styles.perdeu} to="/login/perdeu">
+        Perdeu a Senha?
+      </Link>
       <div className={styles.cadastro}>
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Faça o seu cadastro aqui:</p>
