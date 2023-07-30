@@ -50,6 +50,18 @@ export function USER_POST(body) {
   };
 }
 
+export function USER_DELETE(id) {
+  return {
+    url: `${API_URL}/api/user/${id}`,
+    options: {
+      method: 'DELETE',
+      headers: {
+        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
+      },
+    },
+  };
+}
+
 export function PHOTO_POST(formData, token) {
   return {
     url: API_URL + '/api/photo',

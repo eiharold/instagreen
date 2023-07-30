@@ -1,0 +1,97 @@
+.conteinerUsers {
+  margin-top: 30px;
+}
+
+.itemUsers {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.idusuario {
+  background: #718f82;
+  display: inline;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.nomeusuario {
+  font-size: 1.4em;
+  display: inline;
+  margin-left: 10px;
+}
+
+.emailusuario {
+  color: #718f82;
+  margin-top: 10px;
+}
+
+.button {
+  font-size: 1rem;
+  font-family: var(--type-first);
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  background: #fff;
+  color: #465a51;
+  min-width: 8rem;
+  padding: 0.8rem 1.2rem;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #dfd9cd, 0 0 0 4px #465a51;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.btnver {
+  text-align: center;
+  background: #465a51;
+  padding: 0.3rem 0.6rem;
+  line-height: 1;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  font-family: var(--type-first);
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: 0.1s;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.btnver:focus,
+.btnver:hover {
+  outline: none;
+  background: #718f82;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #718f82;
+}
+
+@media (max-width: 40rem) {
+  
+  .idusuario {
+    font-size: 0.9em;
+  }
+  .nomeusuario {
+    font-size: 1.2em;
+  }
+  .emailusuario {
+    font-size: 0.85em;
+  }
+  }
