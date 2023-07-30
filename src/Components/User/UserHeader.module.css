@@ -1,0 +1,14 @@
+.header {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+@media (max-width: 40rem) {
+  .header {
+    justify-content: end;
+  }
+}

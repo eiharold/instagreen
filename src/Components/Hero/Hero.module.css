@@ -1,0 +1,20 @@
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+  align-items: center;
+  justify-content: center;
+  background-color: #465a51;
+  background: url('../../Assets/bg-hero.jpeg') no-repeat center center;
+  padding: 20px;
+  margin-top: 1rem;
+}
+
+.h1hero {
+  color: #fff;
+  max-width: 540px;
+  margin: 0 auto;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
